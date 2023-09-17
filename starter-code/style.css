@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #d5ddf5;
+}
+
+.inner-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/*Title and toggle Design*/
+
+.top-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.light-dark-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.light-text{
+    font-size: 15px;
+}
+
+.sun-Btn{
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sun-Btn img{
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+}
+
+/*Search-bar Design*/
+
+.search-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.search-img{
+    position: absolute;
+    left: 20px;
+}
+
+.search-bar{
+    width: 100%;
+    height: 55px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    padding: 7px 115px 8px 60px;
+    background-color: #fff;
+}
+
+.error{
+    position: absolute;
+    right: 140px;
+    color: red;
+}
+
+.searchBtn{
+    position: absolute;
+    right: 5px;
+    background-color: #2d60ed;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 13px 20px;
+    cursor: pointer;
+}
+
+/*profile Design*/
+
+.profile-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.image-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.image-container img{
+    width: 100%;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.information-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+}
+
+.first-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+
+.second-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-link a{
+    text-decoration: none;
+    color: #000;
+}
+
+.bio-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 430px;
+}
+
+.data-view-components{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d5ddf5;
+    border-radius: 10px;
+    gap: 65px;
+    padding: 20px;
+}
+
+.social-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+}
+
+.top-column-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.top-column-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.location-container, 
+.media-container , 
+.website-container, 
+.company-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/*User Searches Design*/
+
+.user-Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 500px;
+    margin-top: 30px;
+}
+
+.list-columns{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.user-card{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 50px;
+    padding: 15px;
+}
+
+.website-container a{
+    text-decoration: none;
+    color: black
+}
+
+.invisible{
+    display: none;
+}
+
+/*Dark Mode*/
+
+.dark-mode-active{
+    background-color: #00172b;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.dark-text{
+    color: #fff;
+    font-size: 15px;
+}
+
+.dark-mode-active a{
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.moon-Btn{
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.moon-Btn img{
+    width: 30px;
+    height: 30px;
+    filter: invert(0%);
+}
+
+.dark-mode-active .search-bar{
+    background-color: #132047;
+    color: #fff;
+}
+
+.dark-mode-active .profile-container{
+    background-color: #132047;
+    color: #fff;
+    transition: background-color  0.3s ease;
+}
+
+.dark-mode-active .data-view-components{
+    background-color:  #00172b;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode-active .user-card{
+    background-color: #132047;
+    color: #fff;
+}
+
+@media screen and (max-width: 700px){
+
+    main{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        gap: 15px;
+    }
+
+    .inner-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%; 
+        max-width: 400px; /* Limit the maximum width */
+        margin: 0 auto; /* Center the container horizontally */
+    }
+    
+    .top-container{
+        display: flex;
+        align-items: center; 
+        gap: 15px; 
+    }
+
+    .search-container{
+        width: 100%;
+        max-width: 100%; /* Ensure the container doesn't overflow */
+    }
+
+    .profile-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        padding: 15px; 
+        width: 100%; 
+        
+    }
+
+    .information-container{
+        width: 380px;
+        gap: 10px; 
+        text-align: center; 
+        font-size: 14px;
+    }
+
+    .first-row{
+        gap: 30px;
+    }
+
+    .bio-container{
+        width: 330px;
+    }
+    
+    .data-view-components{
+        width: 100%;
+        gap: 20px; 
+    }
+
+    .social-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .user-Container{
+        width: 360px;
+    }
+
+
+    .invisible{
+        display: none;
+    }
+
+
+}

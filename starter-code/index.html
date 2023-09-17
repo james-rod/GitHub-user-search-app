@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Josefin+Sans:wght@300;400;600&family=Kumbh+Sans:wght@400;700&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@800&family=Mina&family=Montserrat:wght@500;700&family=Outfit&family=Overpass&family=Roboto:wght@400;700&family=Source+Code+Pro:wght@500&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | GitHub user search app</title>
+   <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <div class="inner-container">
+
+      <div class="top-container">
+        <div class="devfinder-container">
+          <h1 class="title">devfinder</h1>
+        </div>
+
+        <div class="light-dark-container">
+          <h3 class="light-text">Light</h3>
+          <h3 class="dark-text invisible" >Dark</h3>
+          <button id="toggleLight" class="sun-Btn">
+            <img src="/starter-code/assets/icon-sun.svg" alt="sun-img">
+          </button>
+          <button id="toggleDark" class="moon-Btn invisible" >
+            <img src="/starter-code/assets/icon-moon.svg" alt="moon-img">
+          </button>
+        </div>
+      </div>  
+
+      <div class="search-container">
+        <img class="search-img" src="/starter-code/assets/icon-search.svg" alt="search-img">
+        <input type="search" name="search" class="search-bar" placeholder="Search GitHub username... ">
+        <span id="no-result" class="error invisible">Not Found</span>
+        <button class="searchBtn">Search</button>
+      </div>
+
+      <section class="profile-container">
+        <div class="image-container">
+          <img id="avatar" src="/starter-code/assets/octocatImg.png" alt="octocatImg">
+        </div>
+
+        <div class="information-container">
+          <div class="first-row">
+            <div class="title-Name">
+              <h1 id="username-title">The Octocat</h1>
+            </div>
+            <div class="joined-conatainer">
+              <p id="join">Joined 25 Jan 2011</p>
+            </div>
+          </div>
+
+          <div class="second-row">
+            <div class="user-link">
+              <a href="https://github.com/" id="urlUser">@octocat</a>
+            </div>
+          </div>
+
+            <div class="bio-container">
+              <p id="bio">This profile has no bio</p>
+            </div>
+
+          <div class="data-view-components">
+            <div class="repoContainer">
+              <h3>Repos</h3>
+              <span id="repos">8</span>
+            </div>
+
+            <div class="followers-Container">
+              <h3>Followers</h3>
+              <span id="followers">3938</span>
+            </div>
+
+            <div class="following-Container">
+              <h3>Following</h3>
+              <span id="following">9</span>
+            </div>
+          </div>
+
+          <div class="social-container">
+            <div class="top-column-one">
+              <div class="location-container">
+                <img src="/starter-code/assets/icon-location.svg" alt="location-icon">
+                <p id="location">San Francisco</p>
+              </div>
+
+              <div class="website-container">
+                <img src="/starter-code/assets/icon-website.svg" alt="website-icon">
+                <p id="website"><a href="#">http://github.blog</a></p>
+              </div>
+            </div>
+
+            <div class="top-column-two">
+              <div class="media-container">
+                <img src="/starter-code/assets/icon-twitter.svg" alt="twitter-icon">
+                <p id="media">Not Available</p>
+              </div>
+
+              <div class="company-container">
+                <img src="/starter-code/assets/icon-company.svg" alt="company-icon">
+                <p id="company">@github</p>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </section>
+    </div>
+
+    <div class="user-Container invisible">
+      <ul id="characterList" class="list-columns"></ul>
+    </div>
+
+  </main>
+</body>
+</html>
